@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aeromodeling</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            
+            font-family: Arial;
+        }
+
+        body {
+            background-image: url(https://cdn.pixabay.com/photo/2020/05/11/23/33/rc-plane-5160638_1280.jpg);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .navbar {
+            background-color:rgb(0, 0, 0);
+            display: flex;
+            justify-content: right;
+            padding: 15px 0;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 12px 20px;
+            margin: 0 15px;
+            font-size: 18px;
+            position: relative;
+            transition: color 0.3s ease-in-out;
+        }
+
+        
+        .navbar a::after {
+            
+            position: absolute;
+            left: 50%;
+            bottom: -3px;
+            width: 0;
+            height: 3px;
+            background-color: #ff9800;
+            transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+        }
+
+        .navbar a:hover::after {
+            width: 100%;
+            left: 0;
+        }
+
+        .navbar a:hover {
+            color: #ff9800;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#timeline">Timeline</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#contact">Contact</a>
+        <a href="#footer">Footer</a>
+    </nav>
+    <section id="home">
+        <h2 style="color: rgb(255, 255, 255);">Home</h2>
+        <p style="color:rgb(255, 255, 255)">
+            Get ready to witness the adrenaline pumping dogfights and innovation filled aeromodels
+        </p>
+        <a href="#" class="register" style="color:rgb(255, 255, 255)">Register</a>
+    </section>
+    <section id="about">
+        <h2 style="color:rgb(255, 255, 255)">About</h2>
+        <p style="color:rgb(255, 255, 255)">RC plane dogfights test pilots' skills in aerial combat, maneuverability, speed, and tactical precision.</p>
+    </section>
+    <section id="gallery">
+        <h2 style="color:rgb(255, 255, 255)">Gallery</h2>
+    </section>
+
+
+
+
+    <section id="timeline">
+        <h2 style="margin-bottom: 20px; color:rgb(255, 255, 255)">Event Timeline</h2>
+        <div class="timeline">
+            <div class="tl">
+                <p style="color:rgb(255, 255, 255)">Selections</p>
+            </div>
+            <div class="tl">
+                <p style="color:rgb(255, 255, 255)">Travel to our place</p>
+            </div>
+            <div class="t">
+                <p style="color:rgb(255, 255, 255)">2 Weeks of Building</p>
+            </div>
+            <div class="tl">
+                <p style="color:rgb(255, 255, 255)">Showdown</p>
+            </div>
+            <div class="tl">
+                <p style="color:rgb(255, 255, 255)">Top 3 Pilots & Planes Awarded</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2 style="color:rgb(255, 255, 255)">Contact</h2>
+        <p style="color:rgb(255, 255, 255)">Reach out for more details.</p>
+    </section>
+
+  
+    <section id="footer">
+        <div class="footer-container">
+            <h2 style="color:rgb(255, 255, 255)">Contact Us</h2>
+            <p style="color:rgb(255, 255, 255)">Email: info@aeromodellingevent.com</p>
+            <p style="color:rgb(255, 255, 255)">Phone: +91 98765 xyz</p>
+            <p style="color:rgb(255, 255, 255)">Location: XYZ Airfield, India</p>
+            <p style="color:rgb(255, 255, 255)">&copy; 2025 Aeromodelling Competition. All Rights Reserved.</p>
+        </div>
+    </section>
+    
+    <style>
+        #footer {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #000;
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+        }
+    
+        .footer-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+    
+        #footer h2 {
+            margin-bottom: 10px;
+        }
+    
+        #footer p {
+            margin: 5px 0;
+            font-size: 16px;
+        }
+</body>
+</html>
